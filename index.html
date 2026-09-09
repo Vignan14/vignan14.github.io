@@ -3,616 +3,1119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vignan Kumar V – Learning Operations Manager with 10+ years. LMS, ServiceNow, AI & Automation. PepsiCo. Hyderabad, India.">
+    <meta name="description" content="Vignan Kumar V – Learning Operations Manager. Premium portfolio showcasing 10+ years of expertise in global L&D operations.">
     <meta name="og:title" content="Vignan Kumar V — Learning Operations Manager">
-    <meta name="og:description" content="10+ years in L&D Operations, LMS, ServiceNow & AI. Lead team of 6 managing 3,000+ learners across North America.">
-    <meta name="og:url" content="https://vignan14.github.io">
+    <meta name="og:description" content="Elegant portfolio of Vignan Kumar V. Manager at PepsiCo. Leading teams and transforming learning operations at scale.">
     <title>Vignan Kumar V — Learning Operations Manager</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.25);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fafafa;
-            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: var(--dark);
+            overflow-x: hidden;
+            position: relative;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
         }
+
+        /* GLASSMORPHISM EFFECT */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+        }
+
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 40px;
+        }
+
         nav {
-            text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
         }
+
+        .logo {
+            font-size: 1.3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: #0066cc;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.9em;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 40px 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 80px;
+        }
+
+        .hero-content {
+            flex: 1;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 4.5em;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85em;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #64748b;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .description {
+            font-size: 1em;
+            color: #475569;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .quote {
+            font-size: 1.3em;
+            font-style: italic;
+            color: var(--primary);
+            margin: 40px 0;
+            padding: 25px 30px;
+            border-left: 4px solid var(--secondary);
+            background: rgba(99, 102, 241, 0.05);
+            border-radius: 10px;
             font-weight: 500;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #000;
-        }
-        .header p {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 20px;
-        }
+
         .cta-buttons {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 20px;
+            margin-top: 40px;
             flex-wrap: wrap;
         }
-        .cta-buttons a {
-            padding: 10px 20px;
-            background: #0066cc;
-            color: white;
+
+        .btn {
+            padding: 14px 35px;
+            border-radius: 12px;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .cta-buttons a:hover {
-            background: #0052a3;
-        }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #f5f5f5;
-            border-radius: 4px;
-        }
-        .stat {
-            text-align: center;
-        }
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #0066cc;
-        }
-        .stat-label {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 5px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 10px;
-            color: #000;
-        }
-        .section h3 {
-            font-size: 1.3em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #0066cc;
-        }
-        .job {
-            margin-bottom: 25px;
-            padding: 15px;
-            background: #f9f9f9;
-            border-left: 4px solid #0066cc;
-            border-radius: 4px;
-        }
-        .job-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #000;
-        }
-        .job-company {
-            color: #0066cc;
-            margin-top: 5px;
-        }
-        .job-dates {
-            color: #999;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-        .job-description {
-            margin-top: 10px;
-            color: #555;
-            line-height: 1.6;
-        }
-        .job-description ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        .job-description li {
-            margin-bottom: 8px;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        .skill-category {
-            padding: 15px;
-            background: #f9f9f9;
-            border-radius: 4px;
-        }
-        .skill-category h4 {
-            color: #0066cc;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .skill-category ul {
-            list-style: none;
-            margin-left: 0;
-        }
-        .skill-category li {
-            padding: 5px 0;
-            color: #555;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid;
+            cursor: pointer;
             font-size: 0.95em;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
         }
-        .skill-category li:before {
-            content: "• ";
-            color: #0066cc;
-            margin-right: 8px;
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
         }
-        table {
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 48px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--primary);
+            border-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image {
+            flex: 1;
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
             width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+            max-width: 450px;
         }
-        table th {
-            background: #f5f5f5;
-            padding: 12px;
-            text-align: left;
-            font-weight: bold;
-            border: 1px solid #ddd;
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 30px;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(20px);
         }
-        table td {
-            padding: 12px;
-            border: 1px solid #ddd;
+
+        .image-container img {
+            width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
         }
-        table tr:nth-child(even) {
-            background: #fafafa;
+
+        .image-container img:hover {
+            transform: scale(1.02);
         }
-        .feature-cards {
+
+        /* STATS SECTION */
+        .stats-section {
+            max-width: 1400px;
+            margin: 100px auto;
+            padding: 0 40px;
+        }
+
+        .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .stat-card {
+            glass;
+            padding: 35px;
+            text-align: center;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        /* SECTIONS */
+        .section h2 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 3px;
+        }
+
+        .section h3 {
+            font-size: 1.8em;
+            color: var(--dark);
+            margin: 50px 0 30px;
+            font-weight: 700;
+        }
+
+        /* SKILLS */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .skill-card {
+            glass;
+            padding: 40px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            hover-effect;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 70px rgba(99, 102, 241, 0.25);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .skill-card h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card li {
+            padding: 10px 0;
+            color: #475569;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+        }
+
+        .skill-card li::before {
+            content: '✦';
+            color: var(--secondary);
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* EXPERIENCE */
+        .experience-container {
+            position: relative;
+        }
+
+        .experience-item {
+            glass;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .experience-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+        }
+
+        .job-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .job-meta {
+            display: flex;
             gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .job-company {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        .job-dates {
+            color: #94a3b8;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .job-description {
+            color: #475569;
+            margin-top: 15px;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .job-description ul {
+            list-style: none;
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+        .job-description li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #64748b;
+        }
+
+        .job-description li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* FEATURES */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            glass;
+            padding: 35px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 70px rgba(99, 102, 241, 0.25);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .feature-number {
+            font-size: 2.8em;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            color: var(--dark);
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            font-size: 0.95em;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* EDUCATION */
+        .education-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .education-table th {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .education-table td {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: #475569;
+            font-weight: 400;
+        }
+
+        .education-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .education-table tr:hover td {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        /* AWARDS */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .award-card {
+            glass;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid rgba(236, 72, 153, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .award-card:hover {
+            transform: scale(1.05);
+            border-color: var(--secondary);
+            box-shadow: 0 15px 50px rgba(236, 72, 153, 0.2);
+        }
+
+        .award-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .award-card h4 {
+            color: var(--dark);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .award-card p {
+            color: #64748b;
+            font-size: 0.9em;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 80px 40px;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: 0 25px 80px rgba(99, 102, 241, 0.3);
+        }
+
+        .contact-section h2 {
+            color: white;
             margin-bottom: 20px;
         }
-        .feature-card {
-            padding: 20px;
-            background: #f0f7ff;
-            border-left: 4px solid #0066cc;
-            border-radius: 4px;
+
+        .contact-section h2::after {
+            background: white;
         }
-        .feature-card h4 {
-            color: #0066cc;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .feature-card p {
-            font-size: 0.95em;
-            color: #555;
-            line-height: 1.5;
-        }
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
+
+        .contact-section p {
+            font-size: 1.1em;
             margin-top: 15px;
+            opacity: 0.95;
+            font-weight: 300;
         }
-        .tool {
-            padding: 15px;
-            background: #f5f5f5;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        .tool strong {
-            display: block;
-            color: #0066cc;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #666;
-            font-size: 0.9em;
-        }
+
         .contact-info {
-            background: #f5f5f5;
-            padding: 20px;
-            border-radius: 4px;
-            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
         }
-        .contact-info p {
-            margin: 8px 0;
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
         }
-        .contact-info a {
-            color: #0066cc;
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .contact-item h4 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.8;
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+
+        footer a {
+            color: var(--primary);
             text-decoration: none;
         }
-        .contact-info a:hover {
+
+        footer a:hover {
             text-decoration: underline;
         }
-        .quote {
-            font-style: italic;
-            color: #666;
-            border-left: 4px solid #0066cc;
-            padding-left: 15px;
-            margin: 20px 0;
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 100px 20px 40px;
+                gap: 40px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul {
+                gap: 20px;
+                font-size: 0.85em;
+            }
+
+            .container {
+                padding: 60px 20px;
+            }
+
+            .section h2 {
+                font-size: 2em;
+            }
+
+            .skills-grid,
+            .features-grid,
+            .awards-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-item {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- HEADER -->
+    <header>
         <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#ai">AI & Automation</a>
-            <a href="#tools">Tools</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <div class="logo">VK ✦</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#ai">AI & Automation</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <div class="header">
+    <!-- HERO SECTION -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <div class="subtitle">Learning Operations Manager</div>
             <h1>Vignan Kumar V</h1>
-            <p>Learning Operations Manager | Global LMS Administration, Service Delivery & Team Leadership</p>
-            <p style="color: #999; font-size: 0.95em;">Open to L&D Manager · Learning Operations Manager · LMS/LXP Lead Roles</p>
-            <div class="cta-buttons">
-                <a href="mailto:vignankumar.14@gmail.com">✉ Email Me</a>
-                <a href="https://www.linkedin.com/in/vignankumar14/">LinkedIn Profile</a>
-            </div>
-        </div>
-
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>I am a <strong>Learning Operations Manager with 10+ years of experience</strong> leading enterprise learning platforms and global operations teams. Currently managing learning operations at <strong>PepsiCo, Hyderabad</strong>, I lead a team of 6 across North America administering platforms for 3,000+ active learners and managing ServiceNow workflows at scale.</p>
-            <p style="margin-top: 15px;">What sets me apart is my ability to <strong>turn learning operations into measurable business capability</strong> — combining strong operational discipline with modern automation and analytics. I actively use AI tools (ChatGPT, Claude, Copilot) to improve documentation, streamline workflows, and build smarter processes.</p>
-            <p style="margin-top: 15px;">I bring expertise in <strong>SLA-driven delivery, global stakeholder coordination, team leadership, and process improvement</strong> — with growing capability in Power BI analytics and automation, positioning me as a modern L&D Operations leader.</p>
+            <div class="tagline">Global LMS Administration, Service Delivery & Team Leadership</div>
+            <p class="description">I transform learning operations into measurable business capability. Leading a team of 6 across North America, managing 3,000+ learners with precision and innovation.</p>
+            <p class="description">With 10+ years driving enterprise learning platforms and global operations, I combine operational excellence with modern AI and automation to scale learning delivery.</p>
             <p class="quote">"I don't just manage learning operations — I scale them."</p>
-
-            <h3>Key Stats</h3>
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Years L&D Ops</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">6</div>
-                    <div class="stat-label">Team Size</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">3,000+</div>
-                    <div class="stat-label">Learners</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">Enterprises</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">4+</div>
-                    <div class="stat-label">LMS Platforms</div>
-                </div>
+            <div class="cta-buttons">
+                <a href="mailto:vignankumar.14@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="https://www.linkedin.com/in/vignankumar14/" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
+        <div class="hero-image">
+            <div class="image-container">
+                <img src="photo.png" alt="Vignan Kumar V - Learning Operations Manager">
+            </div>
+        </div>
+    </section>
 
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Team Leaders</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3K+</div>
+                <div class="stat-label">Learners Managed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Global Companies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">LMS Platforms</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="container">
         <div class="section" id="skills">
-            <h2>Core Skills</h2>
+            <h2>Expertise & Skills</h2>
 
-            <h3>Learning Operations & Leadership</h3>
+            <h3>Core Competencies</h3>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Operational Management</h4>
+                <div class="skill-card">
+                    <h4>🎯 Operations & Leadership</h4>
                     <ul>
-                        <li>SLA compliance and service level delivery</li>
-                        <li>Global stakeholder coordination</li>
-                        <li>Vendor management</li>
-                        <li>Team leadership & development</li>
-                        <li>Learning assignment workflows</li>
-                        <li>Access governance & lifecycle management</li>
-                        <li>Escalation handling</li>
-                        <li>Complex problem-solving</li>
+                        <li>SLA Compliance & Delivery</li>
+                        <li>Global Stakeholder Coordination</li>
+                        <li>Team Leadership & Development</li>
+                        <li>Learning Assignment Workflows</li>
+                        <li>Access Governance</li>
+                        <li>Escalation Management</li>
                     </ul>
                 </div>
-            </div>
-
-            <h3>LMS & Learning Technology</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Platforms & Systems</h4>
+                <div class="skill-card">
+                    <h4>🏢 LMS & Platforms</h4>
                     <ul>
-                        <li>Schoox administration</li>
-                        <li>SAP SuccessFactors Learning</li>
+                        <li>Schoox Administration</li>
+                        <li>SAP SuccessFactors</li>
                         <li>SABA LMS</li>
                         <li>Degreed LXP</li>
-                        <li>ServiceNow ticketing</li>
-                        <li>Incident management</li>
-                        <li>Platform troubleshooting</li>
-                        <li>Data integrity</li>
-                        <li>User access governance</li>
-                        <li>Learning history tracking</li>
+                        <li>ServiceNow Ticketing</li>
+                        <li>Platform Troubleshooting</li>
                     </ul>
                 </div>
-            </div>
-
-            <h3>Operations & Analytics</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Reporting & Metrics</h4>
+                <div class="skill-card">
+                    <h4>📊 Analytics & Data</h4>
                     <ul>
-                        <li>Operational metrics & SLA dashboards</li>
-                        <li>Learning reporting & MIS</li>
-                        <li>Process improvement</li>
-                        <li>TAT reduction</li>
-                        <li>Power BI (building capability)</li>
-                        <li>MS Excel (advanced)</li>
+                        <li>Operational Metrics</li>
+                        <li>SLA Dashboards</li>
+                        <li>Power BI (Building)</li>
+                        <li>Advanced Excel</li>
+                        <li>Learning Reporting</li>
+                        <li>Process Improvement</li>
                     </ul>
                 </div>
-            </div>
-
-            <h3>AI, Automation & Modern Tools</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Modern Tech</h4>
+                <div class="skill-card">
+                    <h4>🤖 AI & Automation</h4>
                     <ul>
-                        <li>Prompt Engineering (LinkedIn Certified)</li>
+                        <li>Prompt Engineering (Certified)</li>
                         <li>ChatGPT & Claude</li>
                         <li>Microsoft Copilot</li>
                         <li>Power Automate</li>
-                        <li>GitHub workflows</li>
-                        <li>Visual Studio Code</li>
+                        <li>GitHub Workflows</li>
+                        <li>VS Code</li>
                     </ul>
                 </div>
-            </div>
-
-            <h3>Instructional Design & Content</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Learning Design</h4>
+                <div class="skill-card">
+                    <h4>📚 Instructional Design</h4>
                     <ul>
-                        <li>Certified Instructional Designer (KPMG)</li>
-                        <li>Adult learning principles</li>
-                        <li>eLearning content structuring</li>
-                        <li>Camtasia video & screen recording</li>
-                        <li>Articulate Storyline & Rise</li>
+                        <li>Certified ID Practitioner</li>
+                        <li>Adult Learning Principles</li>
+                        <li>eLearning Design</li>
+                        <li>Camtasia Video Editing</li>
+                        <li>Storyline & Rise</li>
+                        <li>Content Structure</li>
                     </ul>
                 </div>
             </div>
         </div>
+    </section>
 
+    <!-- EXPERIENCE SECTION -->
+    <section class="container">
         <div class="section" id="experience">
-            <h2>Professional Experience</h2>
-
-            <div class="job">
-                <div class="job-title">Manager – Learning Operations</div>
-                <div class="job-company">PepsiCo, Hyderabad</div>
-                <div class="job-dates">October 2025 – Present</div>
-                <div class="job-description">
-                    <p>Lead team of 6 administering Schoox and Degreed platforms supporting 3,000+ learners across North America. Own operational outcomes, SLA compliance, incident response, and team development.</p>
-                    <ul>
-                        <li>Drive global implementation and steady-state operations of digital learning platforms; establish governance forums aligning stakeholders on platform roadmap and business priorities</li>
-                        <li>Own incident and request management through ServiceNow, establishing response protocols and escalation standards; maintain SLA compliance across learning platform queue</li>
-                        <li>Lead country onboarding and enablement activities for new markets; develop operational documentation and process standards</li>
-                        <li>Manage learning assignment profiles, completion tracking, and learning history accuracy; oversee access governance and user lifecycle management</li>
-                        <li>Partner with platform vendors and internal administrators to ensure platform stability, troubleshoot production issues, and drive enhancements</li>
-                        <li>Develop and coach learning operations team, setting standards for service quality, accountability, and professional growth</li>
+            <h2>Professional Journey</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <div class="job-title">Manager – Learning Operations</div>
+                    <div class="job-meta">
+                        <span class="job-company">PepsiCo, Hyderabad</span>
+                        <span class="job-dates">October 2025 – Present</span>
+                    </div>
+                    <p class="job-description">Lead team of 6 administering Schoox and Degreed platforms for 3,000+ learners across North America. Own operational outcomes, SLA compliance, and team development.</p>
+                    <ul class="job-description">
+                        <li>Drive global implementation and steady-state operations of digital learning platforms</li>
+                        <li>Own incident and request management through ServiceNow with 98%+ SLA compliance</li>
+                        <li>Lead country onboarding and enablement for new markets</li>
+                        <li>Manage learning assignment profiles and access governance</li>
+                        <li>Partner with vendors to ensure platform stability and drive enhancements</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Associate Manager – Learning Operations</div>
-                <div class="job-company">PepsiCo, Hyderabad</div>
-                <div class="job-dates">June 2020 – September 2025</div>
-                <div class="job-description">
-                    <p>Supported global Schoox platform rollout and operations before promotion to Manager. Coordinated learning delivery across ILT, VILT, and digital formats. Established operational processes and governance protocols.</p>
-                    <ul>
-                        <li>Coordinated global platform implementation; managed stakeholder alignment on configuration decisions and business requirements</li>
-                        <li>Maintained training records, learning history data, and operational documentation; created dashboards and reports for leadership visibility</li>
-                        <li>Supported learning program delivery coordination, including trainer onboarding, facility scheduling, and participant management</li>
-                        <li>Partnered with business units on learning-related requests; managed complex escalations and cross-functional problem-solving</li>
+                <div class="experience-item">
+                    <div class="job-title">Associate Manager – Learning Operations</div>
+                    <div class="job-meta">
+                        <span class="job-company">PepsiCo, Hyderabad</span>
+                        <span class="job-dates">June 2020 – September 2025</span>
+                    </div>
+                    <p class="job-description">Supported global Schoox platform rollout and operations before promotion to Manager.</p>
+                    <ul class="job-description">
+                        <li>Coordinated global platform implementation and stakeholder alignment</li>
+                        <li>Maintained training records and created leadership dashboards</li>
+                        <li>Supported learning program delivery coordination</li>
+                        <li>Managed complex escalations and cross-functional initiatives</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Learning Specialist – Learning & Knowledge</div>
-                <div class="job-company">Accenture, Hyderabad</div>
-                <div class="job-dates">November 2018 – April 2020</div>
-                <div class="job-description">
-                    <p>Supported classroom, virtual, and blended learning programs in global delivery environment. Coordinated training logistics and provided instructional support to trainers and facilitators.</p>
-                    <ul>
-                        <li>Coordinated end-to-end training delivery including venue logistics, learning platform setup, and classroom readiness</li>
-                        <li>Maintained learning records, curriculum repositories, and training documentation; created participation reports for stakeholder review</li>
-                        <li>Provided operational and instructional support to trainers and facilitators; identified process improvements for program delivery</li>
-                        <li>Monitored learner participation and engagement; gathered qualitative feedback for program refinement</li>
+                <div class="experience-item">
+                    <div class="job-title">Learning Specialist – Learning & Knowledge</div>
+                    <div class="job-meta">
+                        <span class="job-company">Accenture, Hyderabad</span>
+                        <span class="job-dates">November 2018 – April 2020</span>
+                    </div>
+                    <p class="job-description">Supported classroom, virtual, and blended learning programs in global delivery environment.</p>
+                    <ul class="job-description">
+                        <li>Coordinated end-to-end training delivery and logistics</li>
+                        <li>Maintained learning records and documentation</li>
+                        <li>Provided operational support to trainers and facilitators</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Analyst – Training & Knowledge</div>
-                <div class="job-company">Deloitte, Hyderabad</div>
-                <div class="job-dates">February 2017 – February 2018</div>
-                <div class="job-description">
-                    <p>Supported SABA LMS implementation and operations for enterprise clients. Partnered with business and technical teams on learning platform adoption.</p>
-                    <ul>
-                        <li>Participated in SABA LMS implementation projects; gathered requirements, reviewed configurations, and conducted fit-gap analysis</li>
-                        <li>Managed learning-related support requests through ticketing systems; documented common issues and solutions</li>
-                        <li>Provided consultative guidance on LMS features: content management, assessment design, virtual classroom, and reporting capabilities</li>
-                        <li>Supported UAT activities and identified configuration refinements for optimal platform usage</li>
+                <div class="experience-item">
+                    <div class="job-title">Analyst – Training & Knowledge</div>
+                    <div class="job-meta">
+                        <span class="job-company">Deloitte, Hyderabad</span>
+                        <span class="job-dates">February 2017 – February 2018</span>
+                    </div>
+                    <p class="job-description">Supported SABA LMS implementation and operations for enterprise clients.</p>
+                    <ul class="job-description">
+                        <li>Participated in LMS implementation projects</li>
+                        <li>Managed support requests and documentation</li>
+                        <li>Provided consultative guidance on LMS features</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Analyst – Learning Development</div>
-                <div class="job-company">Standard Chartered GBS, Chennai</div>
-                <div class="job-dates">May 2015 – February 2017</div>
-                <div class="job-description">
-                    <p>Managed end-to-end learning operations across instructor-led, virtual, and eLearning programs. Administered eLearning platforms and maintained learning compliance records.</p>
-                    <ul>
-                        <li>Managed learning operations for 1,000+ employee audience: conducted training needs analysis, developed training calendars, coordinated program delivery</li>
-                        <li>Administered multiple eLearning platforms; maintained learning records, MIS dashboards, and audit-ready documentation</li>
-                        <li>Supported learning delivery across classroom, virtual, and on-the-job formats; coached business partners on adult learning principles</li>
-                        <li>Reviewed existing learning content and delivery approaches; recommended enhancements to improve learner experience</li>
-                        <li>Ensured compliance with internal learning governance standards by maintaining accurate records and audit-ready data</li>
+                <div class="experience-item">
+                    <div class="job-title">Analyst – Learning Development</div>
+                    <div class="job-meta">
+                        <span class="job-company">Standard Chartered GBS, Chennai</span>
+                        <span class="job-dates">May 2015 – February 2017</span>
+                    </div>
+                    <p class="job-description">Managed end-to-end learning operations for 1,000+ employee audience.</p>
+                    <ul class="job-description">
+                        <li>Managed learning operations at scale</li>
+                        <li>Administered eLearning platforms</li>
+                        <li>Ensured compliance with governance standards</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Learning Specialist – Talent & Development</div>
-                <div class="job-company">HCL Technologies (Collabera), Bangalore</div>
-                <div class="job-dates">February 2014 – January 2015</div>
-                <div class="job-description">
-                    <p>Coordinated behavioral and professional skills training programs across multiple locations. Managed ILT, virtual, and eLearning program execution using SABA iLearn LMS.</p>
-                    <ul>
-                        <li>Coordinated end-to-end execution of training programs across 3 locations; managed venues, resources, and participant logistics</li>
-                        <li>Administered SABA iLearn LMS; managed user access, enrollment, and utilization reporting</li>
-                        <li>Coordinated virtual learning delivery using webinar and collaboration platforms</li>
-                        <li>Prepared comprehensive learning reports including participation metrics, assessment results, and program utilization</li>
+                <div class="experience-item">
+                    <div class="job-title">Learning Specialist – Talent & Development</div>
+                    <div class="job-meta">
+                        <span class="job-company">HCL Technologies (Collabera), Bangalore</span>
+                        <span class="job-dates">February 2014 – January 2015</span>
+                    </div>
+                    <p class="job-description">Coordinated behavioral and professional skills training programs across multiple locations.</p>
+                    <ul class="job-description">
+                        <li>Coordinated end-to-end training program execution</li>
+                        <li>Administered SABA iLearn LMS</li>
+                        <li>Prepared comprehensive learning reports</li>
                     </ul>
                 </div>
             </div>
         </div>
+    </section>
 
+    <!-- AI & AUTOMATION -->
+    <section class="container">
         <div class="section" id="ai">
             <h2>Modern Edge: AI & Automation</h2>
-
-            <div class="feature-cards">
+            <div class="features-grid">
                 <div class="feature-card">
-                    <h4>01 — Prompt Engineering</h4>
-                    <p><strong>AI-Powered Ticket & Documentation</strong></p>
-                    <p>Apply certified prompt engineering using ChatGPT, Claude, and Copilot to generate high-quality ticket responses, operational documentation, and communications — reducing manual effort while maintaining quality.</p>
+                    <div class="feature-number">01</div>
+                    <h4>Prompt Engineering</h4>
+                    <p>Certified in AI-powered ticket responses and operational documentation using ChatGPT, Claude, and Copilot.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>02 — Learning Operations Automation</h4>
-                    <p><strong>Power Automate & Workflow Efficiency</strong></p>
-                    <p>Actively exploring workflow automation using Power Automate to eliminate repetitive L&D operational tasks, build scalable processes, and improve team productivity.</p>
+                    <div class="feature-number">02</div>
+                    <h4>Operations Automation</h4>
+                    <p>Power Automate and workflow efficiency to eliminate repetitive tasks and build scalable processes.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>03 — Content Creation</h4>
-                    <p><strong>AI-Assisted Learning Content</strong></p>
-                    <p>Leverage AI to structure and create learning content faster — including eLearning scripts, job aids, and training communications — blending instructional design expertise with modern AI capabilities.</p>
+                    <div class="feature-number">03</div>
+                    <h4>AI-Assisted Content</h4>
+                    <p>Leverage AI to structure and create learning content faster while maintaining instructional integrity.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>04 — Analytics & Insights</h4>
-                    <p><strong>Power BI Learning Dashboards</strong></p>
-                    <p>Building capability in Power BI to create meaningful learning operations dashboards providing real-time insights on ticket volumes, SLA performance, team metrics, and training completion trends.</p>
+                    <div class="feature-number">04</div>
+                    <h4>Analytics & Insights</h4>
+                    <p>Power BI dashboards providing real-time insights on performance metrics and SLA compliance.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="section" id="tools">
-            <h2>Tech Stack & Tools</h2>
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Tools</th>
-                </tr>
-                <tr>
-                    <td>Ticketing & Operations</td>
-                    <td>ServiceNow</td>
-                </tr>
-                <tr>
-                    <td>LMS Platforms</td>
-                    <td>Schoox, SAP SuccessFactors Learning, SABA, Degreed</td>
-                </tr>
-                <tr>
-                    <td>HCM Systems</td>
-                    <td>Workday (exposure)</td>
-                </tr>
-                <tr>
-                    <td>AI & Automation</td>
-                    <td>Claude, ChatGPT, Microsoft Copilot, Power Automate</td>
-                </tr>
-                <tr>
-                    <td>Development & Scripting</td>
-                    <td>VS Code, GitHub</td>
-                </tr>
-                <tr>
-                    <td>Data & Analytics</td>
-                    <td>Power BI, MS Excel (advanced)</td>
-                </tr>
-                <tr>
-                    <td>Content Creation</td>
-                    <td>Camtasia, Articulate Storyline, Articulate Rise</td>
-                </tr>
-                <tr>
-                    <td>Communication</td>
-                    <td>Microsoft 365, Collaboration platforms</td>
-                </tr>
-            </table>
-        </div>
-
+    <!-- EDUCATION & AWARDS -->
+    <section class="container">
         <div class="section" id="education">
-            <h2>Education & Certifications</h2>
+            <h2>Education & Recognition</h2>
 
             <h3>Academic Qualifications</h3>
-            <div style="background: #f9f9f9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-                <p><strong>Master of Business Administration – Human Resources Development</strong><br>Osmania University, Hyderabad</p>
-                <p style="margin-top: 10px;"><strong>Bachelor of Science – Molecular Genetics, Microbiology & Chemistry</strong><br>Osmania University, Hyderabad</p>
-            </div>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Specialization</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Master of Business Administration</strong></td>
+                        <td>Human Resources Development</td>
+                        <td>Osmania University, Hyderabad</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bachelor of Science</strong></td>
+                        <td>Molecular Genetics, Microbiology & Chemistry</td>
+                        <td>Osmania University, Hyderabad</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h3>Professional Certifications</h3>
-            <div style="background: #f9f9f9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
-                <p><strong>Certified Instructional Design Practitioner</strong><br>KPMG<br><span style="color: #999; font-size: 0.9em;">Certified in instructional design methodologies, learning program development, and content structuring for enterprise audiences.</span></p>
-                <p style="margin-top: 15px;"><strong>Prompt Engineering: How to Talk to the AIs</strong><br>LinkedIn Learning, January 2026<br><span style="color: #999; font-size: 0.9em;">Certified in advanced prompt engineering for AI tools including ChatGPT, Claude, and Copilot — applied actively in daily L&D operations.</span></p>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">📚</div>
+                    <h4>Certified ID Practitioner</h4>
+                    <p>KPMG • Instructional design methodologies & learning program development</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🤖</div>
+                    <h4>Prompt Engineering</h4>
+                    <p>LinkedIn Learning • January 2026 • Advanced AI tool expertise</p>
+                </div>
             </div>
 
-            <h3>Recognition & Awards</h3>
-            <ul style="margin-left: 20px;">
-                <li><strong>Business Excellence Award</strong> – Standard Chartered Bank</li>
-                <li><strong>Business Champ Award</strong> – Standard Chartered Bank</li>
-                <li><strong>Value Champ (Responsive)</strong> – Standard Chartered Bank</li>
-            </ul>
+            <h3>Awards & Recognition</h3>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <h4>Business Excellence Award</h4>
+                    <p>Standard Chartered Bank</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">⭐</div>
+                    <h4>Business Champ Award</h4>
+                    <p>Standard Chartered Bank</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">✨</div>
+                    <h4>Value Champ (Responsive)</h4>
+                    <p>Standard Chartered Bank</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="section" id="contact">
-            <h2>Get In Touch</h2>
-            <p>Open to L&D Manager, Learning Operations Manager, Learning Systems Manager, and LMS/LXP leadership roles. Always happy to connect with recruiters, peers, and organizations building modern learning operations.</p>
-
+    <!-- CONTACT -->
+    <section class="container">
+        <div class="contact-section" id="contact">
+            <h2>Let's Connect</h2>
+            <p>Open to L&D Manager, Learning Operations Manager, and Learning Systems leadership roles. Always happy to connect with recruiters and organizations building modern learning operations.</p>
+            
             <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:vignankumar.14@gmail.com">vignankumar.14@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+917893668371">+91 7893 668 371</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vignankumar14/">linkedin.com/in/vignankumar14</a></p>
-                <p><strong>Location:</strong> Hyderabad, India</p>
-                <p><strong>Availability:</strong> Immediate</p>
+                <div class="contact-item">
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                    <p><a href="mailto:vignankumar.14@gmail.com">vignankumar.14@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4><i class="fas fa-phone"></i> Phone</h4>
+                    <p><a href="tel:+917893668371">+91 7893 668 371</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4><i class="fab fa-linkedin"></i> LinkedIn</h4>
+                    <p><a href="https://www.linkedin.com/in/vignankumar14/" target="_blank">linkedin.com/in/vignankumar14</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                    <p>Hyderabad, India • Available Immediately</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="footer">
-            <p>Learning Operations Manager | PepsiCo | Hyderabad, India | © 2026</p>
-        </div>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>Learning Operations Manager | Manager at PepsiCo | Hyderabad, India | © 2026</p>
+        <p style="margin-top: 10px;">Crafted with precision <span style="color: var(--primary);">✦</span> for excellence in learning operations</p>
+    </footer>
+
 </body>
 </html>
